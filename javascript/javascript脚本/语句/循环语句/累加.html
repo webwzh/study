@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //先找一个变量接住计算的和,最开始是0
+        var sum = 0;
+         
+        //范围是1~<=10
+        //最开始参与计算的数是1
+        var i = 1;
+        //我需要一个循环来让我的i++ ,一直到<=10
+        while(i<=100){
+            //sum=0 +i = 1
+            //sum=1 +i=  3
+            sum += i;//累加专用(套路)sum = sum + i
+            i++;
+        }
+        //验证最后的累加和
+        console.log(sum);
+        document.write(sum);
+    </script>
+</body>
+</html>

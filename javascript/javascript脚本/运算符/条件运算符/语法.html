@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red{
+            width: 200px;
+            height: 100px;
+            background-color:red;   
+        }
+    </style>
+</head>
+<body>
+    <div class="red" id="div"></div>
+    <script>
+        var a = 10;
+        var b = 20;
+        //你要比较的内容 ? 对 :  不对
+        //a > b ? alert('yes'): alert('no');
+
+
+        div.onclick = function(){
+            //div.style.backgroundColor = 'blue';
+            console.log(div.className);
+            div.className=='red'?div.className='blue':div.className='red';
+        }
+
+        confirm()
+    </script>
+</body>
+</html>

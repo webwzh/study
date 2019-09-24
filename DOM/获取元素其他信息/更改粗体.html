@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mytag">写点字</h1>
+    <script>
+      var mytag = document.getElementById('mytag');
+      console.log(maytag.tagName);
+
+      //那些标签是加粗的,h1~h6 ,b , strong
+      if(maytag.tagName == 'H1' || mytag.tagName == 'H2' || mytag.tagname =='H3'|| mytag.tagName == 'H4' || mytag.tagName == 'H5' || mytag.tagName == 'H6' || mytag.tagName == 'B' || mytag.tagName == 'STRONG' ){
+      mytag.style.fontWeight = 400;
+    }
+
+    //方法二:
+    //不管是不是粗体,统一变为细体
+    mytag.style.fontWeight = 400;
+
+    //方法三:
+    var arr = ['H1','H2','H3','H4','H5','H6','B','STRONG'];
+    // console.log(arr.indexOf('DIV'))
+    // 检测数组里是否有粗体的标签名,返回-1以外都是粗体
+    var is = arr.indedxOf(mytag.tagName);
+    console.log(is);
+    //判断如是粗体标签名  就改变样式
+    if(is != -1){
+        mytag.style.fontWeight = 200;
+        mytag.style.color= 'red';
+    }
+    </script>
+</body>
+</html>

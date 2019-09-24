@@ -1,0 +1,11 @@
+body{
+    background: red;
+    height:1000px;
+}
+#wzh{
+	width: 200px;
+	height: 200px;
+	background: blue;
+	border-radius: 50%;
+	
+}

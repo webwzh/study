@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Document</title>
+     <style></style>
+</head>
+<body>
+    <div id="show"></div>
+    <input type="text" id="a1">+
+    <input type=" text" id="b1">
+    <button id="c1">等于</button>
+     <script>
+       var a1 = document.getElementById('a1');
+       var b1 = document.getElementById('b1');
+       var c1 = document.getElementById('c1');
+       c1.onclick = function(){
+       var a = Number(a1.value) + Number(b1.value);
+       var b = parseInt(a);
+       console.log(b);
+           show.innerHTML = b;
+           if(isNaN(b)){
+            alert('请输入数字');
+        }
+        else{
+            
+        }
+       }
+     </script>
+</body>
+</html>
